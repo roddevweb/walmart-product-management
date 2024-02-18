@@ -35,8 +35,8 @@ const Header = (props: HeaderProps) => {
             {props.title}
           </Typography>
 
-          <Button variant="contained" endIcon={<AddIcon />} style={{backgroundColor:'#FFC220', color:'black'}}> 
-            Adicionar {/* Altere esta linha */}
+          <Button variant="contained" endIcon={<AddIcon />} style={{ backgroundColor: '#FFC220', color: 'black' }}>
+            Add products
           </Button>
 
         </Toolbar>
