@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { Children, ReactNode } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -11,6 +11,7 @@ const Index = (props:LayoutProps) => {
   return (
     <div>
       <Header title={props.title} />
+      
       <Footer/>
     </div>
 
