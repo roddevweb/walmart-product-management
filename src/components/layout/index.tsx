@@ -1,6 +1,7 @@
 import React, { Children, ReactNode } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import { Box } from '@mui/material';
 
 type LayoutProps={
   title:string
@@ -9,11 +10,13 @@ type LayoutProps={
 
 const Index = (props:LayoutProps) => {
   return (
-    <div>
+    <Box display="flex" flexDirection="column" minHeight="100vh">
       <Header title={props.title} />
-      
+        <Box component="main" flexGrow={1}>
+          {props.children}
+        </Box>
       <Footer/>
-    </div>
+    </Box >
 
 
   );

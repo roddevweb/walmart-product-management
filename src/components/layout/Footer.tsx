@@ -5,14 +5,16 @@ import { Directions, Height } from '@mui/icons-material';
 
 const Footer = () => {
     return (
-<Box style={{display:'flex', backgroundColor:'#004F9A', height: 45, justifyContent:'center', alignItems:'center', position: 'fixed', bottom: 0, width: '100%'}}>
-    <Typography style={{color:'white'}}>© 2024 Walmart. All Rights Reserved.</Typography>
-</Box>
-
-
-
-
-
+        <Box
+            display="flex"
+            justifyContent='center'
+            alignItems='center'
+            width='100%'
+            height={45}
+            sx={{ backgroundColor: '#004F9A' }}
+        >
+            <Typography style={{ color: 'white' }}>© 2024 Walmart. All Rights Reserved.</Typography>
+        </Box>
     )
 }
 
